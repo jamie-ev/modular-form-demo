@@ -9,17 +9,20 @@ import '@fontsource/roboto/700.css';
 import { CircularProgress } from '@mui/material';
 import { FruitForm } from './pages/fruit-form.component';
 import { VegetableForm } from './pages/vegetable-form.component';
+import { BasePage } from './pages/base-page.component';
 
 function App() {
   return (
     <>
       <Suspense fallback={<CircularProgress/>}>
         <BrowserRouter>
-          <Routes>
-            <Route path="/fruits" element={<FruitForm />} />
-            <Route path="/vegetables" element={<VegetableForm />} />
-            <Route path="/*" element={<Navigate replace to="/fruits" />} />
-          </Routes>
+          <BasePage>
+            <Routes>
+              <Route path="/fruits" element={<FruitForm />} />
+              <Route path="/vegetables" element={<VegetableForm />} />
+              <Route path="/*" element={<Navigate replace to="/fruits" />} />
+            </Routes>
+          </BasePage>
         </BrowserRouter>
       </Suspense>
     </>
