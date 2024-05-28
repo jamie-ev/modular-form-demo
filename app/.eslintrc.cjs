@@ -9,6 +9,11 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
