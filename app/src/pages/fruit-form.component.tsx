@@ -1,8 +1,16 @@
 // @ts-ignore 
-import { RadioButton } from '@modular-form-demo/form-components';
+import { FormProvider, RadioInputGroup } from '@modular-form-demo/form-components';
+import Button from "@mui/material/Button";
+
+type TestFormData = {
+  test: string;
+};
 
 export const FruitForm = () => (
   <div>Fruits!
-    <RadioButton id="test" name="test" value="test" label="test label" />
+    <FormProvider defaultValues={{test: 'test value 2'}} onSubmit={(data: TestFormData) => console.log(data)}>
+      <RadioInputGroup label="question 1" name="test"/>
+      <Button type="submit">Submit</Button>
+    </FormProvider>
   </div>
 );
