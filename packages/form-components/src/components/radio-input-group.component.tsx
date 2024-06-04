@@ -1,14 +1,15 @@
 import {FormLabel, RadioGroup} from "@mui/material";
 import {Controller} from "react-hook-form";
-import {RadioInput} from "./radio-input.component";
+import {RadioInput, RadioInputProps} from "./radio-input.component";
 
 export type RadioInputGroupProps = {
   label: string;
   name: string;
   control: never;
+  responses: RadioInputProps[];
 }
 
-export const RadioInputGroup = ({ label, name, control }: RadioInputGroupProps ) => (
+export const RadioInputGroup = ({ label, name, control, responses }: RadioInputGroupProps ) => (
   <>
     <FormLabel component="legend">{label}</FormLabel>
     <Controller
@@ -16,8 +17,7 @@ export const RadioInputGroup = ({ label, name, control }: RadioInputGroupProps )
       control={control}
       render={({ field: { onChange, value } }) => (
         <RadioGroup value={value} onChange={onChange}>
-          <RadioInput label="test" value="test value" />
-          <RadioInput label="test 2" value="test value 2" />
+          {responses.map(item => <RadioInput key={item.value} label={item.label} value={item.value} />)}
         </RadioGroup>
       )}
     />
