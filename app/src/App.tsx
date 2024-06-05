@@ -8,7 +8,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { CircularProgress } from '@mui/material';
 import { FruitPage } from './pages/fruit-page.component.tsx';
-import { VegetableForm } from './pages/vegetable-form.component';
+import { VegetablePage } from './pages/vegetable-page.component.tsx';
 import { BasePage } from './pages/base-page.component';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <BasePage>
             <Routes>
               <Route path="/fruits" element={<FruitPage />} />
-              <Route path="/vegetables" element={<VegetableForm />} />
+              <Route path="/vegetables" element={<VegetablePage />} />
               <Route path="/*" element={<Navigate replace to="/fruits" />} />
             </Routes>
           </BasePage>

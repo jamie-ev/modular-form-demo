@@ -1,7 +1,7 @@
-export const FruitBackgroundImage = () => (
+export const VegetableBackgroundImage = () => (
   <>
     <div style={{
-        backgroundImage: 'url("/fruit-background.png")',
+        backgroundImage: 'url("/vegetable-background.png")',
         width: "100vw",
         height: "100vh",
         backgroundRepeat: "repeat",
@@ -12,7 +12,7 @@ export const FruitBackgroundImage = () => (
         zIndex: "-1"
     }}/>
     <div style={{
-        backgroundColor: 'rgba(245,220,240,0.45)',
+        backgroundColor: 'rgba(220,255,240,0.45)',
         width: "100vw",
         height: "100vh",
         position: "fixed",
