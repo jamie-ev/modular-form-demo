@@ -13,8 +13,8 @@ export const FruitResults = ({ data, onUpdate }: { data: FruitFormData, onUpdate
             <p>You love {data.orange} popsicles!</p>
         )}
         {(!data.red && !data.yellow && !data.orange) && (
-            <p>Nothing to say, huh? Are you sure about that?</p>
+            <p>Nothing to say? Try again!</p>
         )}
-        <Button variant="contained" onClick={onUpdate}>Try again?</Button>
+        <Button variant="contained" onClick={onUpdate}>Update responses?</Button>
     </>
 );

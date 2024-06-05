@@ -17,7 +17,7 @@ export const FruitPage = () => {
         <>
             <FruitBackgroundImage/>
             <section style={{backgroundColor: "#3f4746", padding: "25px", maxHeight: "65vh", width: '420px', overflowY: "auto"}}>
-                {showForm && <FruitForm onSubmit={(data: FruitFormData) => handleSubmit(data)}/>}
+                {showForm && <FruitForm defaultValues={results} onSubmit={(data: FruitFormData) => handleSubmit(data)}/>}
                 {!showForm && <FruitResults data={results} onUpdate={() => setShowForm(true)} />}
             </section>
         </>
