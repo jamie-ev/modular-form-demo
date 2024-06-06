@@ -1,5 +1,5 @@
 // @ts-ignore
-import {RadioInputProps} from "@modular-form-demo/form-components";
+import { RadioInputProps } from '@modular-form-demo/form-components';
 
 export type VegetableFormData = {
   red: string;
@@ -69,7 +69,7 @@ export const VegetableRadioConfig: RadioConfig[] = [
         value: 'bell pepper',
       },
       {
-        label: 'Can\'t beat old fashioned corn on the cob',
+        label: "Can't beat old fashioned corn on the cob",
         value: 'corn',
       },
     ],

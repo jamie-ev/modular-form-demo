@@ -7,8 +7,8 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "paths": {
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"],
-    },
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
+    }
   },
   "include": ["vite.config.ts"]
 }

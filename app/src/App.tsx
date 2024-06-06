@@ -14,7 +14,7 @@ import { BasePage } from './pages/base-page.component';
 function App() {
   return (
     <>
-      <Suspense fallback={<CircularProgress/>}>
+      <Suspense fallback={<CircularProgress />}>
         <BrowserRouter>
           <BasePage>
             <Routes>
@@ -26,7 +26,7 @@ function App() {
         </BrowserRouter>
       </Suspense>
     </>
-  )
-};
+  );
+}
 
 export default App;

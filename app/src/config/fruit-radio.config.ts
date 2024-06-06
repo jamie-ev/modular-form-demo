@@ -1,5 +1,5 @@
 // @ts-ignore - TODO investigate module not defined error
-import {RadioInputProps} from "@modular-form-demo/form-components";
+import { RadioInputProps } from '@modular-form-demo/form-components';
 
 export type FruitFormData = {
   red: string;
@@ -69,7 +69,7 @@ export const FruitRadioConfig: RadioConfig[] = [
         value: 'tangerine',
       },
       {
-        label: 'Can\'t beat old fashioned oranges',
+        label: "Can't beat old fashioned oranges",
         value: 'orange',
       },
     ],
