@@ -9,7 +9,6 @@ export interface ExpandableInputGroupProps extends RadioInputGroupProps {
 export const ExpandableInputGroup = ({
   label,
   name,
-  control,
   responses,
 }: ExpandableInputGroupProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -37,7 +36,7 @@ export const ExpandableInputGroup = ({
         </div>
       </Button>
       <div style={{ display: isOpen ? 'block' : 'none' }}>
-        <RadioGroup name={name} control={control} responses={responses} />
+        <RadioGroup name={name} responses={responses} />
       </div>
     </section>
   );

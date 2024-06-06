@@ -3,10 +3,10 @@ import {
   FruitRadioConfig,
 } from '../config/fruit-radio.config.ts';
 import Button from '@mui/material/Button';
-// @ts-ignore
 import {
   ExpandableInputGroup,
   FormProvider,
+  // @ts-ignore
 } from '@modular-form-demo/form-components';
 
 export const FruitForm = ({

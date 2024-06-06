@@ -6,7 +6,7 @@ import React from 'react';
 
 export type FormProviderProps = {
   defaultValues: { [key: string]: string | number };
-  onSubmit: () => void;
+  onSubmit: (data: { [key: string]: string | number }) => void;
   children: React.ReactNode;
 };
 
