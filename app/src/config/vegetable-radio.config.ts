@@ -1,4 +1,3 @@
-// @ts-ignore
 import { RadioInputProps } from '@modular-form-demo/form-components';
 
 export type VegetableFormData = {

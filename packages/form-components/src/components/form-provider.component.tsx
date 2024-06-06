@@ -4,9 +4,11 @@ import {
 } from 'react-hook-form';
 import React from 'react';
 
+export type FormData = { [key: string]: string | number };
+
 export type FormProviderProps = {
-  defaultValues: { [key: string]: string | number };
-  onSubmit: (data: { [key: string]: string | number }) => void;
+  defaultValues: FormData;
+  onSubmit: (data: FormData) => void;
   children: React.ReactNode;
 };
 

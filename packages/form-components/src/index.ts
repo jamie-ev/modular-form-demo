@@ -5,3 +5,4 @@ export { ExpandableInputGroup } from './components/expandable-input-group.compon
 
 // Types
 export type { RadioInputProps } from './components/radio-input.component';
+export type { FormData } from './components/form-provider.component';

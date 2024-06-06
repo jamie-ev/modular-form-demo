@@ -1,4 +1,3 @@
-// @ts-ignore - TODO investigate module not defined error
 import { RadioInputProps } from '@modular-form-demo/form-components';
 
 export type FruitFormData = {

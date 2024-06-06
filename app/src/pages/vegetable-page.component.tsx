@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FormData } from '@modular-form-demo/form-components';
 import {
   defaultValues,
   VegetableFormData,
@@ -11,8 +12,8 @@ export const VegetablePage = () => {
   const [showForm, setShowForm] = useState<boolean>(true);
   const [results, setResults] = useState<VegetableFormData>(defaultValues);
 
-  const handleSubmit = (data: VegetableFormData) => {
-    setResults(data);
+  const handleSubmit = (data: FormData) => {
+    setResults(data as VegetableFormData);
     setShowForm(false);
   };
 
@@ -31,7 +32,7 @@ export const VegetablePage = () => {
         {showForm && (
           <VegetableForm
             defaultValues={results}
-            onSubmit={(data: VegetableFormData) => handleSubmit(data)}
+            onSubmit={(data: FormData) => handleSubmit(data)}
           />
         )}
         {!showForm && (

@@ -5,8 +5,8 @@ import {
 import Button from '@mui/material/Button';
 import {
   ExpandableInputGroup,
+  FormData,
   FormProvider,
-  // @ts-ignore
 } from '@modular-form-demo/form-components';
 
 export const FruitForm = ({
@@ -14,11 +14,11 @@ export const FruitForm = ({
   onSubmit,
 }: {
   defaultValues: FruitFormData;
-  onSubmit: (data: FruitFormData) => void;
+  onSubmit: (data: FormData) => void;
 }) => (
   <FormProvider
     defaultValues={defaultValues}
-    onSubmit={(data: FruitFormData) => onSubmit(data)}
+    onSubmit={(data: FormData) => onSubmit(data)}
   >
     {FruitRadioConfig.map((item) => (
       <ExpandableInputGroup

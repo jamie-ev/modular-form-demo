@@ -1,3 +1,4 @@
+import { FormData } from '@modular-form-demo/form-components';
 import { FruitBackgroundImage } from '../components/fruit-background-image.component.tsx';
 import { FruitForm } from '../components/fruit-form.component.tsx';
 import { useState } from 'react';
@@ -8,8 +9,8 @@ export const FruitPage = () => {
   const [showForm, setShowForm] = useState<boolean>(true);
   const [results, setResults] = useState<FruitFormData>(defaultValues);
 
-  const handleSubmit = (data: FruitFormData) => {
-    setResults(data);
+  const handleSubmit = (data: FormData) => {
+    setResults(data as FruitFormData);
     setShowForm(false);
   };
 
@@ -28,7 +29,7 @@ export const FruitPage = () => {
         {showForm && (
           <FruitForm
             defaultValues={results}
-            onSubmit={(data: FruitFormData) => handleSubmit(data)}
+            onSubmit={(data: FormData) => handleSubmit(data)}
           />
         )}
         {!showForm && (
