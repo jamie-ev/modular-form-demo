@@ -7,10 +7,7 @@ export interface RadioInputGroupProps {
   responses: RadioInputProps[];
 }
 
-export const RadioGroup = ({
-  name,
-  responses,
-}: RadioInputGroupProps) => (
+export const RadioGroup = ({ name, responses }: RadioInputGroupProps) => (
   <Controller
     name={name}
     render={({ field: { onChange, value } }) => (

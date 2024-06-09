@@ -1,27 +1,33 @@
 import { RadioInputProps } from '@modular-form-demo/form-components';
 
+enum FRUITS {
+  RED = 'red',
+  YELLOW = 'yellow',
+  ORANGE = 'orange',
+}
+
 export type FruitFormData = {
-  red: string;
-  yellow: string;
-  orange: string;
+  [FRUITS.RED]: string;
+  [FRUITS.YELLOW]: string;
+  [FRUITS.ORANGE]: string;
 };
 
 export const defaultValues: FruitFormData = {
-  red: '',
-  yellow: '',
-  orange: '',
+  [FRUITS.RED]: '',
+  [FRUITS.YELLOW]: '',
+  [FRUITS.ORANGE]: '',
 };
 
 export type RadioConfig = {
   label: string;
-  name: string;
+  name: FRUITS;
   responses: RadioInputProps[];
 };
 
 export const FruitRadioConfig: RadioConfig[] = [
   {
     label: 'Which red fruit do you like best?',
-    name: 'red',
+    name: FRUITS.RED,
     responses: [
       {
         label: 'Strawberry is the best',
@@ -39,7 +45,7 @@ export const FruitRadioConfig: RadioConfig[] = [
   },
   {
     label: 'Which yellow fruit is tastiest?',
-    name: 'yellow',
+    name: FRUITS.YELLOW,
     responses: [
       {
         label: 'I love lemon',
@@ -57,7 +63,7 @@ export const FruitRadioConfig: RadioConfig[] = [
   },
   {
     label: 'Which orange fruit makes you happiest?',
-    name: 'orange',
+    name: FRUITS.ORANGE,
     responses: [
       {
         label: 'Peaches for days',

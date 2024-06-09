@@ -1,27 +1,33 @@
 import { RadioInputProps } from '@modular-form-demo/form-components';
 
+enum VEGETABLES {
+  RED = 'red',
+  GREEN = 'green',
+  YELLOW = 'yellow',
+}
+
 export type VegetableFormData = {
-  red: string;
-  green: string;
-  yellow: string;
+  [VEGETABLES.RED]: string;
+  [VEGETABLES.GREEN]: string;
+  [VEGETABLES.YELLOW]: string;
 };
 
 export const defaultValues: VegetableFormData = {
-  red: '',
-  green: '',
-  yellow: '',
+  [VEGETABLES.RED]: '',
+  [VEGETABLES.GREEN]: '',
+  [VEGETABLES.YELLOW]: '',
 };
 
 export type RadioConfig = {
   label: string;
-  name: string;
+  name: VEGETABLES;
   responses: RadioInputProps[];
 };
 
 export const VegetableRadioConfig: RadioConfig[] = [
   {
     label: 'Which red vegetable do you like best?',
-    name: 'red',
+    name: VEGETABLES.RED,
     responses: [
       {
         label: 'Beet is sweetest',
@@ -39,7 +45,7 @@ export const VegetableRadioConfig: RadioConfig[] = [
   },
   {
     label: 'Which green vegetable is tastiest?',
-    name: 'green',
+    name: VEGETABLES.GREEN,
     responses: [
       {
         label: 'I love spinach',
@@ -57,7 +63,7 @@ export const VegetableRadioConfig: RadioConfig[] = [
   },
   {
     label: 'Which yellow vegetable wins out?',
-    name: 'yellow',
+    name: VEGETABLES.YELLOW,
     responses: [
       {
         label: 'Squash is so good in soup',

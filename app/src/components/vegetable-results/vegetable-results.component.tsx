@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import { VegetableFormData } from '../config/vegetable-radio.config.ts';
+import { VegetableFormData } from '../../config/vegetable-radio.config.ts';
 
 export const VegetableResults = ({
   data,

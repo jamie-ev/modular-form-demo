@@ -3,10 +3,10 @@ import { FormData } from '@modular-form-demo/form-components';
 import {
   defaultValues,
   VegetableFormData,
-} from '../config/vegetable-radio.config.ts';
-import { VegetableForm } from '../components/vegetable-form.component.tsx';
-import { VegetableResults } from '../components/vegetable-results.component.tsx';
-import { VegetableBackgroundImage } from '../components/vegetable-background-image.component.tsx';
+} from '../../config/vegetable-radio.config.ts';
+import { VegetableForm } from '../../components/vegetable-form/vegetable-form.component.tsx';
+import { VegetableResults } from '../../components/vegetable-results/vegetable-results.component.tsx';
+import { VegetableBackgroundImage } from '../../components/background-image/vegetable-background-image.component.tsx';
 
 export const VegetablePage = () => {
   const [showForm, setShowForm] = useState<boolean>(true);

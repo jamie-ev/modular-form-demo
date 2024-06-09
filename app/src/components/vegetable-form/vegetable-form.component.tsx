@@ -7,7 +7,7 @@ import {
 import {
   VegetableFormData,
   VegetableRadioConfig,
-} from '../config/vegetable-radio.config.ts';
+} from '../../config/vegetable-radio.config.ts';
 
 export const VegetableForm = ({
   defaultValues,

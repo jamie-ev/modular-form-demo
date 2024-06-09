@@ -1,4 +1,4 @@
-import { FruitFormData } from '../config/fruit-radio.config.ts';
+import { FruitFormData } from '../../config/fruit-radio.config.ts';
 import Button from '@mui/material/Button';
 
 export const FruitResults = ({

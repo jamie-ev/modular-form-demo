@@ -1,9 +1,12 @@
 import { FormData } from '@modular-form-demo/form-components';
-import { FruitBackgroundImage } from '../components/fruit-background-image.component.tsx';
-import { FruitForm } from '../components/fruit-form.component.tsx';
+import { FruitBackgroundImage } from '../../components/background-image/fruit-background-image.component.tsx';
+import { FruitForm } from '../../components/fruit-form/fruit-form.component.tsx';
 import { useState } from 'react';
-import { defaultValues, FruitFormData } from '../config/fruit-radio.config.ts';
-import { FruitResults } from '../components/fruit-results.component.tsx';
+import {
+  defaultValues,
+  FruitFormData,
+} from '../../config/fruit-radio.config.ts';
+import { FruitResults } from '../../components/fruit-results/fruit-results.component.tsx';
 
 export const FruitPage = () => {
   const [showForm, setShowForm] = useState<boolean>(true);

@@ -1,7 +1,7 @@
 import {
   FruitFormData,
   FruitRadioConfig,
-} from '../config/fruit-radio.config.ts';
+} from '../../config/fruit-radio.config.ts';
 import Button from '@mui/material/Button';
 import {
   ExpandableInputGroup,
