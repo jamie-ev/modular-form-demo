@@ -1,8 +1,10 @@
+import vegetableBackground from '/vegetable-background.png';
+
 export const VegetableBackgroundImage = () => (
   <>
     <div
       style={{
-        backgroundImage: 'url("/vegetable-background.png")',
+        backgroundImage: `url("${vegetableBackground}")`,
         width: '100vw',
         height: '100vh',
         backgroundRepeat: 'repeat',

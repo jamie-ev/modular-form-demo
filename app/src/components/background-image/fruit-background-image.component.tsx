@@ -1,8 +1,10 @@
+import fruitBackground from '/fruit-background.png';
+
 export const FruitBackgroundImage = () => (
   <>
     <div
       style={{
-        backgroundImage: 'url("/fruit-background.png")',
+        backgroundImage: `url("${fruitBackground}")`,
         width: '100vw',
         height: '100vh',
         backgroundRepeat: 'repeat',
