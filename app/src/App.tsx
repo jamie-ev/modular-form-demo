@@ -18,9 +18,9 @@ function App() {
         <BrowserRouter>
           <BasePage>
             <Routes>
-              <Route path="/fruits" element={<FruitPage />} />
-              <Route path="/vegetables" element={<VegetablePage />} />
-              <Route path="/*" element={<Navigate replace to="/fruits" />} />
+              <Route path="/modular-form-demo/fruits" element={<FruitPage />} />
+              <Route path="/modular-form-demo/vegetables" element={<VegetablePage />} />
+              <Route path="/modular-form-demo/*" element={<Navigate replace to="/modular-form-demo/fruits" />} />
             </Routes>
           </BasePage>
         </BrowserRouter>
