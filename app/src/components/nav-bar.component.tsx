@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import { REPO_URL } from '../config/constants.ts';
 
 export const NavBar = () => {
   const navigate = useNavigate();
@@ -15,8 +16,8 @@ export const NavBar = () => {
       }}
     >
       <ButtonGroup variant="contained" aria-label="nav button group">
-        <Button onClick={() => navigate('/fruits')}>Fruits</Button>
-        <Button onClick={() => navigate('/vegetables')}>Vegetables</Button>
+        <Button onClick={() => navigate(`${REPO_URL}/fruits`)}>Fruits</Button>
+        <Button onClick={() => navigate(`${REPO_URL}/vegetables`)}>Vegetables</Button>
       </ButtonGroup>
     </nav>
   );
