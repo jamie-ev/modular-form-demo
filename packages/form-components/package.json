@@ -8,7 +8,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "pnpm -w run format"
+    "build": "tsc",
+    "format": "prettier --write src"
   },
   "dependencies": {
     "@mui/material": "^5.15.19",

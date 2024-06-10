@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest --passWithNoTests",
-    "format": "pnpm -w run format"
+    "format": "prettier --write src"
   },
   "dependencies": {
     "@fontsource/roboto": "^5.0.13",

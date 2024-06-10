@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "format": "prettier . --write"
+    "format": "turbo format"
   },
   "devDependencies": {
     "eslint-config-prettier": "^9.1.0",
