@@ -22,5 +22,6 @@ You must have [pnpm](https://pnpm.io/installation) installed
 ## Monorepo structure
 
 - `/app` main form app
+  - `/dist` is kept out of `.gitignore` so GitHub Pages can deploy from `/dist/index.html` 
 - `/packages` common packages usable by all apps in the repo
   - `/form-components` form components using Material UI and react hook form for lightning fast form configuration 
